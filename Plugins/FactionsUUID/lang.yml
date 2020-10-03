@@ -1,57 +1,57 @@
 root:
-  AUTHOR: misc
+  AUTHOR: nevuen
   RESPONSIBLE: misc
-  LANGUAGE: English
+  LANGUAGE: Spanish
   ENCODING: UTF-8
-  LOCALE: en_US
+  LOCALE: es_AR
   REQUIRESUNICODE: 'false'
   DEFAULT: 'true'
   STATE: complete
   LOCAL:
-    AUTHOR: misc
+    AUTHOR: nevuen
     RESPONSIBLE: misc
-    LANGUAGE: English
-    REGION: US
+    LANGUAGE: Spanish
+    REGION: AR
     STATE: complete
 COMMAND:
   ADMIN:
-    NOTMEMBER: '%1$s&e is not a member in your faction.'
-    NOTADMIN: '&cYou are not the faction admin.'
-    TARGETSELF: '&cThe target player musn''t be yourself.'
-    DEMOTES: '&eYou have demoted %1$s&e from the position of faction admin.'
-    DEMOTED: '&eYou have been demoted from the position of faction admin by %1$s&e.'
-    PROMOTES: '&eYou have promoted %1$s&e to the position of faction admin.'
-    PROMOTED: '%1$s&e gave %2$s&e the leadership of %3$s&e.'
-    DESCRIPTION: Hand over your admin rights
+    NOTMEMBER: '%1$s&e no es miembro de tu facción.'
+    NOTADMIN: '&cNo sos administrador de la facción.'
+    TARGETSELF: '&cNo podés elegirte a vos mismo.'
+    DEMOTES: '&eLe quitaste a %1$s&e el rango de administrador.'
+    DEMOTED: '&eTu rango de administrador de facción se te fue removido por %1$s&e.'
+    PROMOTES: '&eConvertiste a %1$s&e en administrador de facción.'
+    PROMOTED: '%1$s&e dio a %2$s&e el liderazgo de %3$s&e.'
+    DESCRIPTION: Da tus derechos administrativos a otra persona.
   AHOME:
-    DESCRIPTION: Send a player to their f home no matter what.
-    NOHOME: '%1$s doesn''t have an f home.'
-    SUCCESS: '%1$s was sent to their f home.'
-    OFFLINE: '%1$s is offline.'
-    TARGET: You were sent to your f home.
+    DESCRIPTION: Envía a un jugador a su f home, no importa qué.
+    NOHOME: '%1$s no tiene una f home.'
+    SUCCESS: '%1$s fue enviado a su f home.'
+    OFFLINE: '%1$s no está conectado.'
+    TARGET: Fuiste enviado a tu f home.
   ANNOUNCE:
-    DESCRIPTION: Announce a message to players in faction.
+    DESCRIPTION: Anuncia algo a los miembros de la facción.
   AUTOCLAIM:
-    ENABLED: '&eNow auto-claiming land for &d%1$s&e.'
-    DISABLED: '&eAuto-claiming of land disabled.'
-    REQUIREDRANK: '&cYou must be &d%1$s&c to claim land.'
-    OTHERFACTION: '&cYou can''t claim land for &d%1$s&c.'
-    DESCRIPTION: Auto-claim land as you walk around
+    ENABLED: '&eAuto-claiming activado para &d%1$s&e.'
+    DISABLED: '&eAuto-claiming desactivado.'
+    REQUIREDRANK: '&cTienes que ser &d%1$s&c para adquirir tierras.'
+    OTHERFACTION: '&cNo podés adquirir tierras para &d%1$s&c.'
+    DESCRIPTION: Auto-claim mientras caminas.
   AUTOHELP:
     HELPFOR: Help for command "
   BAN:
-    DESCRIPTION: Ban players from joining your Faction.
-    TARGET: '&cYou were banned from &7%1$s'
-    BANNED: '&e%1$s &cbanned &7%2$s'
-    ALREADYBANNED: '&c%1$s is already banned'
-    SELF: '&cYou may not ban yourself'
-    INSUFFICIENTRANK: '&cYour rank is too low to ban &7%1$s'
+    DESCRIPTION: Prohibe jugadores unirse a la facción.
+    TARGET: '&cFuiste baneado de &7%1$s'
+    BANNED: '&e%1$s &cbaneó a &7%2$s'
+    ALREADYBANNED: '&c%1$s ya está baneado'
+    SELF: '&cNo podés banearte a vos mismo.'
+    INSUFFICIENTRANK: '&cTu rango es muy bajo para banear a &7%1$s'
   BANLIST:
-    DESCRIPTION: View a Faction's ban list
-    HEADER: '&6There are &c%d&6 bans for %s'
+    DESCRIPTION: Mira la lista de baneos.
+    HEADER: '&6Existen &c%d&6 baneos en %s'
     ENTRY: '&7%d. &c%s &r- &a%s &r- &e%s'
-    NOFACTION: '&4You are not in a Faction.'
-    INVALID: We couldn't find a Faction by the name %s
+    NOFACTION: '&4No pertenecés a ninguna facción.'
+    INVALID: No se encontró una facción con el nombre %s
   BOOM:
     PEACEFULONLY: '&cThis command is only usable by factions which are specifically
       designated as peaceful.'
@@ -68,16 +68,16 @@ COMMAND:
     DESCRIPTION: Enable admin bypass mode
   CHAT:
     DISABLED: '&cThe built in chat channels are disabled on this server.'
-    INVALIDMODE: '&cUnrecognised chat mode. &ePlease enter either ''a'',''f'',''m'',''t''
-      or ''p'''
-    INSUFFICIENTRANK: '&cYou must be at least moderator to enter this chat.'
+    INVALIDMODE: '&cModo de chat incorrecto. &eUsa ''a'',''f'',''m'',''t''
+      o ''p'''
+    INSUFFICIENTRANK: '&cTenés que ser moderador al menos para poder entrar a este chat.'
     DESCRIPTION: Change chat mode
     MODE:
-      PUBLIC: '&ePublic chat mode.'
-      ALLIANCE: '&eAlliance only chat mode.'
-      TRUCE: '&eTruce only chat mode.'
-      FACTION: '&eFaction only chat mode.'
-      MOD: '&eMod only chat mode.'
+      PUBLIC: '&eModo de chat Público.'
+      ALLIANCE: '&eModo de chat de Alianzas.'
+      TRUCE: '&eModo de chat de Treguas.'
+      FACTION: '&eModo de chat de Facción.'
+      MOD: '&eModo de chat de Mods.'
   CHATSPY:
     ENABLE: '&eYou have enabled chat spying mode.'
     ENABLELOG: ' has ENABLED chat spying mode.'
@@ -85,8 +85,8 @@ COMMAND:
     DISABLELOG: ' has DISABLED chat spying mode.'
     DESCRIPTION: Enable admin chat spy mode
   CLAIM:
-    INVALIDRADIUS: '&cIf you specify a radius, it must be at least 1.'
-    DENIED: '&cYou do not have permission to claim in a radius.'
+    INVALIDRADIUS: '&cSi especificás un radio, tiene que ser al menos 1.'
+    DENIED: '&cNo tenés permiso.'
     DESCRIPTION: Claim land from where you are standing
   CLAIMFILL:
     DESCRIPTION: Claim land filling in a gap in claims
@@ -104,35 +104,35 @@ COMMAND:
     NOTVALID: '%s&c is not a cardinal direction. You may use &dnorth&c, &deast&c,
       &dsouth &cor &dwest&c.'
   COLEADER:
-    CANDIDATES: 'Players you can promote: '
-    CLICKTOPROMOTE: 'Click to promote '
-    NOTMEMBER: '%1$s&c is not a member in your faction.'
-    NOTADMIN: '&cYou are not the faction admin.'
-    SELF: '&cThe target player musn''t be yourself.'
-    TARGETISADMIN: '&cThe target player is a faction admin. Demote them first.'
-    REVOKES: '&eYou have removed coleader status from %1$s&e.'
-    REVOKED: '%1$s&e is no longer coleader in your faction.'
-    PROMOTES: '%1$s&e was promoted to coleader in your faction.'
-    PROMOTED: '&eYou have promoted %1$s&e to coleader.'
+    CANDIDATES: 'Jugadores que puedes promover: '
+    CLICKTOPROMOTE: 'Click para promover '
+    NOTMEMBER: '%1$s&c no es miembro de tu facción.'
+    NOTADMIN: '&cNo sos admin de la facción.'
+    SELF: '&cNo podés elegirte a vos mismo.'
+    TARGETISADMIN: '&cEl jugador que elegiste es admin. Bajale el rango primero.'
+    REVOKES: '&eRemoviste el rango coleader a %1$s&e.'
+    REVOKED: '%1$s&e ya no es coleader.'
+    PROMOTES: '%1$s&e fue promovido a coleader.'
+    PROMOTED: '&ePromoviste a %1$s&e a coleader.'
     DESCRIPTION: Give or revoke coleader rights
     ALREADY:
-      COLEADER: The faction already has a coleader. There can only be 1.
+      COLEADER: Ya hay un coleader. Solo puede haber uno.
   CONVERT:
     BACKEND:
       RUNNING: Already running that backend.
       INVALID: Invalid backend
     DESCRIPTION: Convert the plugin backend
   COORDS:
-    MESSAGE: '&e%s''s location: &6%d&e, &6%d&e, &6%d&e in &6%s&e'
+    MESSAGE: '&e%s' se encuentra en: &6%d&e, &6%d&e, &6%d&e in &6%s&e'
     DESCRIPTION: Broadcast your current position to your faction
   CREATE:
-    MUSTLEAVE: '&cYou must leave your current faction first.'
-    INUSE: '&cThat tag is already in use.'
+    MUSTLEAVE: '&cSalí de tu facción primero, con f leave.'
+    INUSE: '&cEse tag ya está en uso.'
     TOCREATE: to create a new faction
     FORCREATE: for creating a new faction
     ERROR: '&cThere was an internal error while trying to create your faction. Please
       try again.'
-    CREATED: '%1$s&e created a new faction %2$s'
+    CREATED: '%1$s&e creó una nueva facción %2$s'
     YOUSHOULD: '&eYou should now: %1$s'
     CREATEDLOG: ' created a new faction: '
     DESCRIPTION: Create a new faction
