@@ -133,7 +133,7 @@ COMMAND:
     ERROR: '&cThere was an internal error while trying to create your faction. Please
       try again.'
     CREATED: '%1$s&e creó una nueva facción %2$s'
-    YOUSHOULD: '&eYou should now: %1$s'
+    YOUSHOULD: '&eCrea una descripción con: %1$s'
     CREATEDLOG: ' created a new faction: '
     DESCRIPTION: Create a new faction
   DEBUG:
@@ -143,12 +143,12 @@ COMMAND:
     DELETIONKEY: '&eDeletion key: %s'
     FAIL: '&eERROR! Could not debug. See console for why.'
   DEINVITE:
-    CANDEINVITE: 'Players you can deinvite: '
-    CLICKTODEINVITE: Click to revoke invite for %1$s
-    ALREADYMEMBER: '%1$s&e is already a member of %2$s'
-    MIGHTWANT: '&eYou might want to: %1$s'
-    REVOKED: '%1$s&e revoked your invitation to &d%2$s&e.'
-    REVOKES: '%1$s&e revoked %2$s''s&e invitation.'
+    CANDEINVITE: 'Cancela la invitación a: '
+    CLICKTODEINVITE: Click para cancelar la invitación a %1$s
+    ALREADYMEMBER: '%1$s&e ya es miembro de %2$s'
+    MIGHTWANT: '&eQuizás quieras: %1$s'
+    REVOKED: '%1$s&e canceló tu invitación a &d%2$s&e.'
+    REVOKES: '%1$s&e canceló la invitación de %2$s'
     DESCRIPTION: Remove a pending invitation
   DELFWARP:
     DELETED: '&eDeleted warp &6%1$s'
@@ -162,8 +162,8 @@ COMMAND:
     TOSET: to unset the faction home
     FORSET: for unsetting the faction home
   DESCRIPTION:
-    CHANGES: 'You have changed the description for &d%1$s&e to:'
-    CHANGED: '&eThe faction %1$s&e changed their description to:'
+    CHANGES: 'Cambiaste la descripción de &d%1$s&e a:'
+    CHANGED: '&eLa facción %1$s&e cambió su descripción a:'
     TOCHANGE: to change faction description
     FORCHANGE: for changing faction description
     DESCRIPTION: Change the faction description
@@ -172,9 +172,9 @@ COMMAND:
     MARKEDPERMANENT: '&eThis faction is designated as permanent, so you cannot disband
       it.'
     BROADCAST:
-      YOURS: '&d%1$s&e disbanded your faction.'
-      NOTYOURS: '&d%1$s&e disbanded the faction %2$s.'
-    HOLDINGS: '&eYou have been given the disbanded faction''s bank, totaling %1$s.'
+      YOURS: '&d%1$s&e eliminó tu facción.'
+      NOTYOURS: '&d%1$s&e eliminó la facción %2$s.'
+    HOLDINGS: '&eSe te dio el dinero de la facción, total: %1$s.'
     DESCRIPTION: Disband a faction
   DTR:
     TOSHOW: to show faction DTR info
