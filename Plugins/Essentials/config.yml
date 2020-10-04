@@ -791,13 +791,13 @@ chat:
   # For more information of chat formatting, check out the wiki: http://wiki.ess3.net/wiki/Chat_Formatting
   # Note: Using the {PREFIX} and {SUFFIX} placeholders along with {DISPLAYNAME} may cause double prefixes/suffixes to be shown in chat unless add-prefix-suffix is uncommented and set to false.
 
-  format: '<{DISPLAYNAME}> {MESSAGE}'
+  #format: '{rel_factionsuuid_relation}{factionsuuid_faction_name} <{DISPLAYNAME}> {MESSAGE}'
   #format: '&7[{GROUP}]&r {DISPLAYNAME}&7:&r {MESSAGE}'
   #format: '&7{PREFIX}&r {DISPLAYNAME}&r &7{SUFFIX}&r: {MESSAGE}'
 
   group-formats:
-    default: '{WORLDNAME} {DISPLAYNAME}&7:&r {MESSAGE}'
-    rankex: '&f[&2VIP&f] {DISPLAYNAME}&7:&f {MESSAGE}'
+    default: '[{factionsuuid_faction_relation_color} {factionsuuid_faction_name}]{DISPLAYNAME}&7:&r {MESSAGE}'
+    vip: '&f[&2VIP&f] {DISPLAYNAME}&7:&f {MESSAGE}'
 
   # If you are using group formats make sure to remove the '#' to allow the setting to be read.
   # Note: Group names are case-sensitive so you must match them up with your permission plugin.
