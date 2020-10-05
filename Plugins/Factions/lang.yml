@@ -15,39 +15,39 @@ root:
     STATE: complete
 COMMAND:
   ADMIN:
-    NOTMEMBER: '%1$s&e is not a member in your faction.'
-    NOTADMIN: '&cYou are not the faction admin.'
-    TARGETSELF: '&cThe target player musn''t be yourself.'
-    DEMOTES: '&eYou have demoted %1$s&e from the position of faction admin.'
-    DEMOTED: '&eYou have been demoted from the position of faction admin by %1$s&e.'
-    PROMOTES: '&eYou have promoted %1$s&e to the position of faction admin.'
-    PROMOTED: '%1$s&e gave %2$s&e the leadership of %3$s&e.'
-    DESCRIPTION: Hand over your admin rights
+    NOTMEMBER: '%1$s&e no es miembro de tu facción.'
+    NOTADMIN: '&cNo sos admin de facción.'
+    TARGETSELF: '&cNo podés elegirte a vos mismo.'
+    DEMOTES: '&eLe quitaste a %1$s&e el rango de administrador.'
+    DEMOTED: '&eSe te fue removido el rango de administrador por %1$s&e.'
+    PROMOTES: '&eConvertiste a %1$s&e en administrador de facción.'
+    PROMOTED: '%1$s&e le dio a %2$s&e el liderazgo de %3$s&e.'
+    DESCRIPTION: Cede tus derechos de administrador.
   AHOME:
-    DESCRIPTION: Send a player to their f home no matter what.
-    NOHOME: '%1$s doesn''t have an f home.'
-    SUCCESS: '%1$s was sent to their f home.'
-    OFFLINE: '%1$s is offline.'
-    TARGET: You were sent to your f home.
+    DESCRIPTION: Envía a un jugador a su f home, no importa qué.
+    NOHOME: '%1$s No tiene una f home.'
+    SUCCESS: '%1$s fue enviado a su f home.'
+    OFFLINE: '%1$s no está conectado.'
+    TARGET: Fuiste enviado a tu f home.
   ANNOUNCE:
-    DESCRIPTION: Announce a message to players in faction.
+    DESCRIPTION: Haz un anuncio a los miembros de la facción.
   AUTOCLAIM:
-    ENABLED: '&eNow auto-claiming land for &d%1$s&e.'
-    DISABLED: '&eAuto-claiming of land disabled.'
-    REQUIREDRANK: '&cYou must be &d%1$s&c to claim land.'
-    OTHERFACTION: '&cYou can''t claim land for &d%1$s&c.'
-    DESCRIPTION: Auto-claim land as you walk around
+    ENABLED: '&eClaiming automático activado para &d%1$s&e.'
+    DISABLED: '&eClaiming automático desactivado.'
+    REQUIREDRANK: '&cTenés que ser &d%1$s&c para adquirir tierras.'
+    OTHERFACTION: '&cNo podés adquirir tierras para &d%1$s&c.'
+    DESCRIPTION: Claiming automático mientras caminás.
   AUTOHELP:
     HELPFOR: Help for command "
   BAN:
-    DESCRIPTION: Ban players from joining your Faction.
-    TARGET: '&cYou were banned from &7%1$s'
-    BANNED: '&e%1$s &cbanned &7%2$s'
-    ALREADYBANNED: '&c%1$s is already banned'
-    SELF: '&cYou may not ban yourself'
-    INSUFFICIENTRANK: '&cYour rank is too low to ban &7%1$s'
+    DESCRIPTION: Prohibe jugadores entrar a tu facción.
+    TARGET: '&cSe te fue prohibido el acceso a &7%1$s'
+    BANNED: '&e%1$s &cle prohibió el acceso a la facción a &7%2$s'
+    ALREADYBANNED: '&c%1$s ya está baneado'
+    SELF: '&cNo podés prohibirte a vos mismo, pelotudo'
+    INSUFFICIENTRANK: '&cTu rango es muy bajo para prohibir el acceso a &7%1$s'
   BANLIST:
-    DESCRIPTION: View a Faction's ban list
+    DESCRIPTION: Chusmeá el ban list de una facción
     HEADER: '&6There are &c%d&6 bans for %s'
     ENTRY: '&7%d. &c%s &r- &a%s &r- &e%s'
     NOFACTION: '&4You are not in a Faction.'
