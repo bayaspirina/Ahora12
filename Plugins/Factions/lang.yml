@@ -48,13 +48,13 @@ COMMAND:
     INSUFFICIENTRANK: '&cTu rango es muy bajo para prohibir el acceso a &7%1$s'
   BANLIST:
     DESCRIPTION: Chusmeá el ban list de una facción
-    HEADER: '&6There are &c%d&6 bans for %s'
+    HEADER: '&6Hay &c%d&6 baneos en %s'
     ENTRY: '&7%d. &c%s &r- &a%s &r- &e%s'
-    NOFACTION: '&4You are not in a Faction.'
-    INVALID: We couldn't find a Faction by the name %s
+    NOFACTION: '&4No estás en ninguna facción.'
+    INVALID: No existe una facción con el nombre %s
   BOOM:
-    PEACEFULONLY: '&cThis command is only usable by factions which are specifically
-      designated as peaceful.'
+    PEACEFULONLY: '&cEste comando está disponible solamente para
+      facciones pacifistas.'
     TOTOGGLE: to toggle explosions
     FORTOGGLE: for toggling explosions
     ENABLED: '%1$s&e has %2$s explosions in your faction''s territory.'
@@ -68,16 +68,16 @@ COMMAND:
     DESCRIPTION: Enable admin bypass mode
   CHAT:
     DISABLED: '&cThe built in chat channels are disabled on this server.'
-    INVALIDMODE: '&cUnrecognised chat mode. &ePlease enter either ''a'',''f'',''m'',''t''
-      or ''p'''
-    INSUFFICIENTRANK: '&cYou must be at least moderator to enter this chat.'
-    DESCRIPTION: Change chat mode
+    INVALIDMODE: '&cModo de chat no válido. &eUsa ''a'',''f'',''m'',''t''
+      o ''p'''
+    INSUFFICIENTRANK: '&cTenés que ser al menos moderador de la facción para usar este chat.'
+    DESCRIPTION: Cambia modo de chat
     MODE:
-      PUBLIC: '&ePublic chat mode.'
-      ALLIANCE: '&eAlliance only chat mode.'
-      TRUCE: '&eTruce only chat mode.'
-      FACTION: '&eFaction only chat mode.'
-      MOD: '&eMod only chat mode.'
+      PUBLIC: '&eModo de chat Público.'
+      ALLIANCE: '&eModo de chat de Alianza.'
+      TRUCE: '&eModo de chat de Tregua.'
+      FACTION: '&eModo de chat de Facción.'
+      MOD: '&eModo de chat de Mod.'
   CHATSPY:
     ENABLE: '&eYou have enabled chat spying mode.'
     ENABLELOG: ' has ENABLED chat spying mode.'
@@ -85,38 +85,38 @@ COMMAND:
     DISABLELOG: ' has DISABLED chat spying mode.'
     DESCRIPTION: Enable admin chat spy mode
   CLAIM:
-    INVALIDRADIUS: '&cIf you specify a radius, it must be at least 1.'
-    DENIED: '&cYou do not have permission to claim in a radius.'
-    DESCRIPTION: Claim land from where you are standing
+    INVALIDRADIUS: '&cSi especificás un radio, debe ser más de 0.'
+    DENIED: '&cNo tenés permiso para hacer esto.'
+    DESCRIPTION: Adquiere territorio desde donde estás parado
   CLAIMFILL:
-    DESCRIPTION: Claim land filling in a gap in claims
-    ABOVEMAX: '&cThe maximum limit for claim fill is %s.'
-    ALREADYCLAIMED: '&cCannot claim fill using already claimed land!'
-    TOOFAR: '&cThis fill would exceed the maximum distance of %.2f'
-    PASTLIMIT: '&cThis claim would exceed the limit!'
-    NOTENOUGHLANDLEFT: '%s &cdoes not have enough land left to make %d claims'
-    TOOMUCHFAIL: '&cAborting claim fill after %d failures'
+    DESCRIPTION: Adquiere territorio libre entre claims
+    ABOVEMAX: '&cEl límite de claim fill es %s.'
+    ALREADYCLAIMED: '&cYa está claimeado'
+    TOOFAR: '&cEste fill excede la distancia máxima de %.2f'
+    PASTLIMIT: '&cEste claim excede el límite'
+    NOTENOUGHLANDLEFT: '%s &cno tiene tierras suficientes para hacer %d claims'
+    TOOMUCHFAIL: '&cSe abortó el claim fill después de %d intentos fallidos'
   CLAIMLINE:
-    INVALIDRADIUS: '&cIf you specify a distance, it must be at least 1.'
-    DENIED: '&cYou do not have permission to claim in a line.'
+    INVALIDRADIUS: '&cTiene que ser más de 0.'
+    DENIED: '&cNo tenés permiso para hacer esto.'
     DESCRIPTION: Claim land in a straight line.
-    ABOVEMAX: '&cThe maximum limit for claim line is &c%s&c.'
-    NOTVALID: '%s&c is not a cardinal direction. You may use &dnorth&c, &deast&c,
-      &dsouth &cor &dwest&c.'
+    ABOVEMAX: '&cEl número máximo es &c%s&c.'
+    NOTVALID: '%s&c no es una dirección válida. Usa &dnorth&c, &deast&c,
+      &dsouth &co &dwest&c.'
   COLEADER:
-    CANDIDATES: 'Players you can promote: '
-    CLICKTOPROMOTE: 'Click to promote '
-    NOTMEMBER: '%1$s&c is not a member in your faction.'
-    NOTADMIN: '&cYou are not the faction admin.'
-    SELF: '&cThe target player musn''t be yourself.'
-    TARGETISADMIN: '&cThe target player is a faction admin. Demote them first.'
-    REVOKES: '&eYou have removed coleader status from %1$s&e.'
-    REVOKED: '%1$s&e is no longer coleader in your faction.'
-    PROMOTES: '%1$s&e was promoted to coleader in your faction.'
-    PROMOTED: '&eYou have promoted %1$s&e to coleader.'
-    DESCRIPTION: Give or revoke coleader rights
+    CANDIDATES: 'Jugadores que puedes promover: '
+    CLICKTOPROMOTE: 'Click para promover '
+    NOTMEMBER: '%1$s&c no es miembro de tu facción.'
+    NOTADMIN: '&cNo sos administrador de la facción.'
+    SELF: '&cNo podés elegirte a vos mismo, picarón.'
+    TARGETISADMIN: '&cEl loco que elegiste es administrador. Bajale el rango primero.'
+    REVOKES: '&eLe removiste el rango de coLeader a %1$s&e.'
+    REVOKED: '%1$s&e ya no es coleader de tu facción.'
+    PROMOTES: '%1$s&e fue promovido a coleader.'
+    PROMOTED: '&eLe diste a %1$s&e el rango de coleader.'
+    DESCRIPTION: Da o quita el rol de coleader a un jugador
     ALREADY:
-      COLEADER: The faction already has a coleader. There can only be 1.
+      COLEADER: La facción ya tiene coleader. Solo puede haber uno.
   CONVERT:
     BACKEND:
       RUNNING: Already running that backend.
