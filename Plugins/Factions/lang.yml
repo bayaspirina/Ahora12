@@ -123,19 +123,19 @@ COMMAND:
       INVALID: Invalid backend
     DESCRIPTION: Convert the plugin backend
   COORDS:
-    MESSAGE: '&e%s''s location: &6%d&e, &6%d&e, &6%d&e in &6%s&e'
-    DESCRIPTION: Broadcast your current position to your faction
+    MESSAGE: '&e%s' se encuentra en: &6%d&e, &6%d&e, &6%d&e in &6%s&e'
+    DESCRIPTION: Envíales tu ubicación a los miembros de tu facción
   CREATE:
-    MUSTLEAVE: '&cYou must leave your current faction first.'
-    INUSE: '&cThat tag is already in use.'
+    MUSTLEAVE: '&cTenés que salir de tu facción actual para hacer eso.'
+    INUSE: '&cTag ya en uso.'
     TOCREATE: to create a new faction
     FORCREATE: for creating a new faction
-    ERROR: '&cThere was an internal error while trying to create your faction. Please
-      try again.'
-    CREATED: '%1$s&e created a new faction %2$s'
-    YOUSHOULD: '&eYou should now: %1$s'
-    CREATEDLOG: ' created a new faction: '
-    DESCRIPTION: Create a new faction
+    ERROR: '&cBeep-Boop hubo un error.
+      Intentá otra vez.'
+    CREATED: '%1$s&e creó una nueva facción %2$s'
+    YOUSHOULD: '&eAñadí una descripción con: %1$s'
+    CREATEDLOG: ' creo una facción: '
+    DESCRIPTION: Create una nueva facción
   DEBUG:
     RUNNING: '&eNow running...'
     COMPLETE: '&eDebug generated! Share this URL: %s'
@@ -143,39 +143,39 @@ COMMAND:
     DELETIONKEY: '&eDeletion key: %s'
     FAIL: '&eERROR! Could not debug. See console for why.'
   DEINVITE:
-    CANDEINVITE: 'Players you can deinvite: '
-    CLICKTODEINVITE: Click to revoke invite for %1$s
-    ALREADYMEMBER: '%1$s&e is already a member of %2$s'
-    MIGHTWANT: '&eYou might want to: %1$s'
-    REVOKED: '%1$s&e revoked your invitation to &d%2$s&e.'
-    REVOKES: '%1$s&e revoked %2$s''s&e invitation.'
-    DESCRIPTION: Remove a pending invitation
+    CANDEINVITE: 'Jugadores a los que puedes revocar su invitación: '
+    CLICKTODEINVITE: Click para revocar invitación a %1$s
+    ALREADYMEMBER: '%1$s&e ya es miembro de %2$s'
+    MIGHTWANT: '&eTal vez quieras: %1$s'
+    REVOKED: '%1$s&e revocó tu invitación a &d%2$s&e.'
+    REVOKES: '%1$s&e revocó la invitación de %2$s &euwu.'
+    DESCRIPTION: Revoca una invitación pendiente
   DELFWARP:
-    DELETED: '&eDeleted warp &6%1$s'
-    INVALID: '&eCouldn''t find warp &6%1$s'
+    DELETED: '&eBorró el warp &6%1$s'
+    INVALID: '&eNo se encontró el warp &6%1$s'
     TODELETE: to delete warp
     FORDELETE: for deleting warp
-    DESCRIPTION: Delete a faction warp
+    DESCRIPTION: Borra un warp de facción
   DELHOME:
-    DEL: '%1$s&e unset the home for your faction.'
-    DESCRIPTION: Unset the faction home
+    DEL: '%1$s&e borra el f home de tu facción.'
+    DESCRIPTION: borra el f home de tu facción
     TOSET: to unset the faction home
     FORSET: for unsetting the faction home
   DESCRIPTION:
-    CHANGES: 'You have changed the description for &d%1$s&e to:'
-    CHANGED: '&eThe faction %1$s&e changed their description to:'
+    CHANGES: 'Cambiaste la descripción de &d%1$s&e a:'
+    CHANGED: '&eLa facción %1$s&e cambió su descripción a:'
     TOCHANGE: to change faction description
     FORCHANGE: for changing faction description
-    DESCRIPTION: Change the faction description
+    DESCRIPTION: Cambia la descripción de la facción
   DISBAND:
-    IMMUTABLE: '&eYou cannot disband the Wilderness, safe zone, or war zone.'
+    IMMUTABLE: '&eEste comando es para facciones.'
     MARKEDPERMANENT: '&eThis faction is designated as permanent, so you cannot disband
       it.'
     BROADCAST:
-      YOURS: '&d%1$s&e disbanded your faction.'
-      NOTYOURS: '&d%1$s&e disbanded the faction %2$s.'
-    HOLDINGS: '&eYou have been given the disbanded faction''s bank, totaling %1$s.'
-    DESCRIPTION: Disband a faction
+      YOURS: '&d%1$s&e eliminó tu facción.'
+      NOTYOURS: '&d%1$s&e eliminó la facción %2$s.'
+    HOLDINGS: '&eSe te dio el banco de la facción, total: %1$s.'
+    DESCRIPTION: Elimina una facción
   DTR:
     TOSHOW: to show faction DTR info
     FORSHOW: for showing faction DTR info
@@ -185,8 +185,8 @@ COMMAND:
       DESCRIPTION: Modify faction DTR
       DONE: '&eSet DTR for %s&e to %s'
   FLY:
-    DESCRIPTION: Enter or leave Faction flight mode
-    CHANGE: '&eFaction flight &d%1$s'
+    DESCRIPTION: Activa o desactiva el modo volador
+    CHANGE: '&eVuelo &d%1$s'
     DAMAGE: '&eFaction flight &ddisabled&e due to entering combat'
     AUTO: '&eFaction auto flight &d%1$s'
     'NO':
@@ -202,49 +202,49 @@ COMMAND:
       CHANGE: '&eFaction flight trail effect set to &d%1s'
     CHANGE: '&eFaction flight trail &d%1s'
   FWARP:
-    CLICKTOWARP: Click to warp!
-    COMMANDFORMAT: '&e/f warp <warpname> [password]'
-    WARPED: '&eWarped to &6%1$s'
+    CLICKTOWARP: Click para warpear
+    COMMANDFORMAT: '&e/f warp <nombreWarp> [contrasena]'
+    WARPED: '&eWarpeado a &6%1$s'
     INVALID:
-      WARP: '&eCouldn''t find warp &6%1$s'
-      PASSWORD: '&4Invalid password!'
+      WARP: '&eNo se encontró el warp &6%1$s'
+      PASSWORD: '&4Contraseña incorrecta.'
     TOWARP: to warp
     FORWARPING: for warping
     WARPS: 'Warps: '
-    DESCRIPTION: Teleport to a faction warp
+    DESCRIPTION: Teleportate a un warp de facción
     PASSWORD:
-      REQUIRED: '&aPlease enter warp password. This will not be visible to anyone
-        else'
-      CANCEL: '&cWarp canceled'
-    NOACCESS: '&cYou do not have permission to use %s &cwarps'
+      REQUIRED: '&aIntroduce la contraseña. Nadie más la podrá
+        ver'
+      CANCEL: '&cWarp cancelado'
+    NOACCESS: '&cNo tenés permiso para usar %s &cwarps'
   WARPOTHER:
     COMMANDFORMAT: '&e/f warpother <faction> <warpname> [password]'
   HELP:
-    '404': '&cThis page does not exist'
-    NEXTCREATE: '&eLearn how to create a faction on the next page.'
-    HOME: '&eAnd don''t forget to set your home:'
+    '404': '&cEsa pag no existe'
+    NEXTCREATE: '&eAveriguá como crear una facción en la siguiente pag.'
+    HOME: '&eNo te olvides de establecer tu f home:'
     BANK:
-      '1': '&eYour faction has a bank which is used to pay for certain'
-      '2': '&ethings, so it will need to have money deposited into it.'
-      '3': '&eTo learn more, use the money command.'
-    PLAYERTITLES: '&ePlayer titles are just for fun. No rules connected to them.'
+      '1': '&eTu facción tiene un banco que es usado para pagar por ciertas'
+      '2': '&ecosas, así que se necesitará almacenar dinero.'
+      '3': '&ePara aprender más, usa el comando f money.'
+    PLAYERTITLES: '&eLos títulos de jugador son solo por diversión.'
     OWNERSHIP:
-      '1': '&eClaimed land with ownership set is further protected so'
-      '2': '&ethat only the owner(s), faction admin, and possibly the'
-      '3': '&efaction moderators have full access.'
+      '1': '&eTerritorios con owner tienen protección extra'
+      '2': '&epara que solo los dueños, administradores'
+      '3': '&eo moderadores tengan acceso solamente'
     RELATIONS:
-      '1': '&eSet the relation you WISH to have with another faction.'
-      '2': '&eYour default relation with other factions will be neutral.'
-      '3': '&eIf BOTH factions choose "ally" you will be allies.'
-      '4': '&eIf ONE faction chooses "enemy" you will be enemies.'
-      '5': '&eYou can never hurt members or allies.'
-      '6': '&eYou can not hurt neutrals in their own territory.'
-      '7': '&eYou can always hurt enemies and players without faction.'
+      '1': '&eElige la relación que te gustaría tener con una facción.'
+      '2': '&eTu relación por defecto con todas las facciones es neutral.'
+      '3': '&eSi AMBAS relaciones eligen "Ally" ambos serán aliados.'
+      '4': '&eSi UNA facción elige "enemy" ambos serán enemigos.'
+      '5': '&eNo podés lastimar miembros o aliades.'
+      '6': '&eNo podés lastimar neutrales.'
+      '7': '&eSolo podés lastimar enemigos.'
       '8': ''
-      '9': '&eDamage from enemies is reduced in your own territory.'
-      '10': '&eWhen you die you lose power. It is restored over time.'
-      '11': '&eThe power of a faction is the sum of all member power.'
-      '12': '&eThe power of a faction determines how much land it can hold.'
+      '9': '&eDaño de enemigos es reducido en tu territorio.'
+      '10': '&eCuando morís, perdés poder. Es restaurado a medida que pasa el tiempo.'
+      '11': '&eEl poder de una facción es la suma del poder de todos los miembros.'
+      '12': '&eEl poder de una facción determina cuánto territorio puede mantener.'
       '13': '&eYou can claim land from factions with too little power.'
     PERMISSIONS:
       '1': '&eOnly faction members can build and destroy in their own'
@@ -266,27 +266,27 @@ COMMAND:
       '3': '&eEven more commands for server admins:'
     DESCRIPTION: Display a help page
   HOME:
-    DENIED: '&cSorry, you cannot teleport to the home of %s'
+    DENIED: '&cNo podés ir al home de %s'
     DISABLED: '&cSorry, Faction homes are disabled on this server.'
     TELEPORTDISABLED: '&cSorry, the ability to teleport to Faction homes is disabled
       on this server.'
-    NOHOME: '&cYour faction does not have a home. '
-    INENEMY: '&cYou cannot teleport to your faction home while in the territory of
-      an enemy faction.'
-    WRONGWORLD: '&cYou cannot teleport to your faction home while in a different world.'
-    ENEMYNEAR: '&cYou cannot teleport to your faction home while an enemy is within
-      %s blocks of you.'
+    NOHOME: '&cTu facción no tiene un f home. '
+    INENEMY: '&cEstás en territorio enemigo. No podes ir a
+      tu f home.'
+    WRONGWORLD: '&cNecesitás estar en la superficie para hacer eso.'
+    ENEMYNEAR: '&cUn enemigo está cerca tuyo. No podés ir
+      a tu f home.'
     TOTELEPORT: to teleport to your faction home
     FORTELEPORT: for teleporting to your faction home
-    DESCRIPTION: Teleport to the faction home
+    DESCRIPTION: Teleportate al home de tu facción
   INVITE:
     TOINVITE: to invite someone
     FORINVITE: for inviting someone
-    CLICKTOJOIN: Click to join!
-    INVITEDYOU: ' has invited you to join '
-    INVITED: '%1$s&e invited %2$s&e to your faction.'
-    ALREADYMEMBER: '%1$s&e is already a member of %2$s'
-    DESCRIPTION: Invite a player to your faction
+    CLICKTOJOIN: Click para unirte
+    INVITEDYOU: ' te invitó a unirte a '
+    INVITED: '%1$s&e invitó a %2$s&e a unirse a la facción.'
+    ALREADYMEMBER: '%1$s&e ya es miembro de %2$s'
+    DESCRIPTION: Invita un jugador a tu facción
     BANNED: '&7%1$s &cis banned from your Faction. Not sending an invite.'
   JOIN:
     CANNOTFORCE: '&cYou do not have permission to move other players into a faction.'
