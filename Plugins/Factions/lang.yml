@@ -287,54 +287,54 @@ COMMAND:
     INVITED: '%1$s&e invitó a %2$s&e a unirse a la facción.'
     ALREADYMEMBER: '%1$s&e ya es miembro de %2$s'
     DESCRIPTION: Invita un jugador a tu facción
-    BANNED: '&7%1$s &cis banned from your Faction. Not sending an invite.'
+    BANNED: '&7%1$s &ctiene el acceso prohibido a la facción.'
   JOIN:
-    CANNOTFORCE: '&cYou do not have permission to move other players into a faction.'
+    CANNOTFORCE: '&cNo tenés permiso para hacer eso.'
     SYSTEMFACTION: '&cPlayers may only join normal factions. This is a system faction.'
-    ALREADYMEMBER: '&c%1$s %2$s already a member of %3$s'
-    ATLIMIT: ' &c!&f The faction %1$s is at the limit of %2$d members, so %3$s cannot
-      currently join.'
-    INOTHERFACTION: '&c%1$s must leave %2$s current faction first.'
-    NEGATIVEPOWER: '&c%1$s cannot join a faction with a negative power level.'
-    REQUIRESINVITATION: '&eThis faction requires invitation.'
-    ATTEMPTEDJOIN: '%1$s&e tried to join your faction.'
+    ALREADYMEMBER: '&c%1$s %2$s ya es miembro de %3$s'
+    ATLIMIT: ' &c!&f La facción %1$s está en el límite de %2$d miembros, %3$s no podrá
+      unirse.'
+    INOTHERFACTION: '&c%1$s tiene que abandonar %2$s facción actual primero.'
+    NEGATIVEPOWER: '&c%1$s no puede unirse a una facción con nivel de poder negativo.'
+    REQUIRESINVITATION: '&eEsta facción requiere invitación.'
+    ATTEMPTEDJOIN: '%1$s&e intentó unirse a tu facción.'
     TOJOIN: to join a faction
     FORJOIN: for joining a faction
-    SUCCESS: '&e%1$s successfully joined %2$s.'
-    MOVED: '&e%1$s moved you into the faction %2$s.'
-    JOINED: '&e%1$s joined your faction.'
-    JOINEDLOG: '%1$s joined the faction %2$s.'
+    SUCCESS: '&e%1$s se unió a %2$s.'
+    MOVED: '&e%1$s te movió a la facción %2$s.'
+    JOINED: '&e%1$s entró a tu facción.'
+    JOINEDLOG: '%1$s se unió a la facción %2$s.'
     MOVEDLOG: '%1$s moved the player %2$s into the faction %3$s.'
-    DESCRIPTION: Join a faction
-    BANNED: '&cYou are banned from %1$s &c:('
+    DESCRIPTION: Entra a una facción
+    BANNED: '&cSe te prohibió el acceso a %1$s &c:('
   KICK:
-    CANDIDATES: 'Players you can kick: '
-    CLICKTOKICK: 'Click to kick '
-    SELF: '&cYou cannot kick yourself.'
-    NONE: That player is not in a faction.
-    NOTMEMBER: '%1$s&c is not a member of %2$s'
-    INSUFFICIENTRANK: '&cYour rank is too low to kick this player.'
-    NEGATIVEPOWER: '&cYou cannot kick that member until their power is positive.'
+    CANDIDATES: 'Jugadores que puedes echar: '
+    CLICKTOKICK: 'Click para echar '
+    SELF: '&cNo podés echarte a vos mismo.'
+    NONE: Ese jugador no está en ninguna facción.
+    NOTMEMBER: '%1$s&c no es miembro de %2$s'
+    INSUFFICIENTRANK: '&cNecesitas un rango más alto para echar gente.'
+    NEGATIVEPOWER: '&cNo podés echar a este miembro hasta que su power sea positivo.'
     TOKICK: to kick someone from the faction
     FORKICK: for kicking someone from the faction
-    FACTION: '%1$s&e kicked %2$s&e from the faction! :O'
-    KICKS: '&eYou kicked %1$s&e from the faction %2$s&e!'
-    KICKED: '%1$s&e kicked you from %2$s&e! :O'
-    DESCRIPTION: Kick a player from the faction
+    FACTION: '%1$s&e echó a %2$s&e de la facción :O'
+    KICKS: '&eEchaste a %1$s&e de la facción %2$s&e!'
+    KICKED: '%1$s&e te echó de %2$s&e! :O'
+    DESCRIPTION: Echa a un jugador de la facción
   LIST:
-    FACTIONLIST: 'Faction List '
+    FACTIONLIST: 'Lista de Facciones '
     TOLIST: to list the factions
     FORLIST: for listing the factions
-    ONLINEFACTIONLESS: 'Online factionless: '
+    ONLINEFACTIONLESS: 'Online sin facción: '
     DESCRIPTION: See a list of the factions
   LISTCLAIMS:
-    MESSAGE: '&eClaims by %s&e in %s:'
-    INVALIDWORLD: '&cInvalid world name %s'
-    NOCLAIMS: '&cNo claims by %s&e in world %s'
-    DESCRIPTION: List your faction's claims
+    MESSAGE: '&eClaims de %s&e en %s:'
+    INVALIDWORLD: '&cNombre inválido %s'
+    NOCLAIMS: '&cSin claims de %s&e en mundo %s'
+    DESCRIPTION: Lista de claims
   LOCK:
-    LOCKED: '&eFactions is now locked'
-    UNLOCKED: '&eFactions in now unlocked'
+    LOCKED: '&eFaction bloqueada'
+    UNLOCKED: '&eFactions desbloqueada'
     DESCRIPTION: Lock all write stuff. Apparently.
   LOGINS:
     TOGGLE: '&eSet login / logout notifications for Faction members to: &6%s'
@@ -343,25 +343,25 @@ COMMAND:
     TOSHOW: to show the map
     FORSHOW: for showing the map
     UPDATE:
-      ENABLED: '&eMap auto update &2ENABLED.'
-      DISABLED: '&eMap auto update &4DISABLED.'
-    DESCRIPTION: Show the territory map, and set optional auto update
+      ENABLED: '&eMapa automático &2ACTIVADO.'
+      DISABLED: '&eMap automático &4DESACTIVADO.'
+    DESCRIPTION: Muestra territorio en un mapa.
   MAPHEIGHT:
     DESCRIPTION: '&eUpdate the lines that /f map sends'
     SET: '&eSet /f map lines to &a%1$d'
     CURRENT: '&eCurrent mapheight: &a%1$d'
   MOD:
-    CANDIDATES: 'Players you can promote: '
-    CLICKTOPROMOTE: 'Click to promote '
-    NOTMEMBER: '%1$s&c is not a member in your faction.'
-    NOTADMIN: '&cYou are not the faction admin.'
-    SELF: '&cThe target player musn''t be yourself.'
-    TARGETISADMIN: '&cThe target player is a faction admin. Demote them first.'
-    REVOKES: '&eYou have removed moderator status from %1$s&e.'
-    REVOKED: '%1$s&e is no longer moderator in your faction.'
-    PROMOTES: '%1$s&e was promoted to moderator in your faction.'
-    PROMOTED: '&eYou have promoted %1$s&e to moderator.'
-    DESCRIPTION: Give or revoke moderator rights
+    CANDIDATES: 'Miembros que puedes promover: '
+    CLICKTOPROMOTE: 'Click para promover '
+    NOTMEMBER: '%1$s&c no es miembro de tu facción.'
+    NOTADMIN: '&cNo sos el admin de la facción.'
+    SELF: '&cNo podés elegirte a vos mismo, pelotudo.'
+    TARGETISADMIN: '&cEl jugador es admin de facción.Bajale el rango primero'
+    REVOKES: '&eRemoviste el rango de moderador a %1$s&e.'
+    REVOKED: '%1$s&e ya no es moderador en tu facción.'
+    PROMOTES: '%1$s&e ahora es moderador de tu facción.'
+    PROMOTED: '&ePromoviste %1$s&e a moderador.'
+    DESCRIPTION: Da o quita rango de admin
   MODIFYPOWER:
     ADDED: '&eAdded &6%1$f &epower to &6%2$s. &eNew total rounded power: &6%3$d'
     DESCRIPTION: Modify the power of a faction/player
@@ -387,38 +387,38 @@ COMMAND:
     DESCRIPTION: Withdraw money
     WITHDRAW: '%1$s withdrew %2$s from the faction bank: %3$s'
   NEAR:
-    DESCRIPTION: Show nearby faction members
+    DESCRIPTION: Muestra miembros cerca
     PLAYER: '&a&l{role-prefix}&8{name} (&d{distance}m&8)'
-    PLAYERLIST: '&eNear: {players-nearby}'
-    NONE: '&8None'
+    PLAYERLIST: '&eCerca: {players-nearby}'
+    NONE: '&8Ninguno'
   OPEN:
     TOOPEN: to open or close the faction
     FOROPEN: for opening or closing the faction
-    OPEN: open
-    CLOSED: closed
-    CHANGES: '%1$s&e changed the faction to &d%2$s&e.'
-    CHANGED: '&eThe faction %1$s&e is now %2$s'
-    DESCRIPTION: Switch if invitation is required to join
+    OPEN: abierta
+    CLOSED: cerrada
+    CHANGES: '%1$s&e cambió la facción a &d%2$s&e.'
+    CHANGED: '&eLa facción %1$s&e está %2$s'
+    DESCRIPTION: Decide si se necesita invitación para entrar
   OWNER:
     DISABLED: '&cSorry, but owned areas are disabled on this server.'
-    LIMIT: '&cSorry, but you have reached the server''s &dlimit of %1$d &cowned areas
-      per faction.'
-    WRONGFACTION: '&cThis land is not claimed by your faction, so you can''t set ownership
-      of it.'
-    NOTCLAIMED: '&cThis land is not claimed by a faction. Ownership is not possible.'
-    NOTMEMBER: '%1$s&e is not a member of this faction.'
-    CLEARED: '&eYou have cleared ownership for this claimed area.'
-    REMOVED: '&eYou have removed ownership of this claimed land from %1$s&e.'
+    LIMIT: '&cLo lamento, llegaste al &dlímite de %1$d &careas
+      por facción.'
+    WRONGFACTION: '&cEste territorio no es tuyo,
+      ladrón.'
+    NOTCLAIMED: '&cEsta tierra no le pertenece a nadie. No se puede poner owner.'
+    NOTMEMBER: '%1$s&e no es miembro de la facción.'
+    CLEARED: '&eNadie es owner de esta área ahora.'
+    REMOVED: '&eRemoviste derechos de Owner a %1$s&e.'
     TOSET: to set ownership of claimed land
     FORSET: for setting ownership of claimed land
-    ADDED: '&eYou have added %1$s&e to the owner list for this claimed land.'
+    ADDED: '&eAñadiste a %1$s&e a la lista de owners de este área.'
     DESCRIPTION: Set ownership of claimed land
   OWNERLIST:
     DISABLED: '&cSorry, but owned areas are disabled on this server.'
-    WRONGFACTION: '&cThis land is not claimed by your faction.'
-    NOTCLAIMED: '&eThis land is not claimed by any faction, thus no owners.'
-    NONE: '&eNo owners are set here; everyone in the faction has access.'
-    OWNERS: '&eCurrent owner(s) of this land: %1$s'
+    WRONGFACTION: '&cEste territorio no es tuyo.'
+    NOTCLAIMED: '&eEsta área no le pertenece a nadie.'
+    NONE: '&eNo hay owners acá.Todos tienen acceso.'
+    OWNERS: '&eOwner(s) de este área: %1$s'
     DESCRIPTION: List owner(s) of this claimed land
   PEACEFUL:
     DESCRIPTION: Set a faction to peaceful
@@ -427,9 +427,9 @@ COMMAND:
     GRANT: granted peaceful status to
     REVOKE: removed peaceful status from
   PERM:
-    DESCRIPTION: '&6Edit or list your Faction''s permissions.'
+    DESCRIPTION: '&6Edita los permisos de tu facción.'
     INVALID:
-      RELATION: Invalid relation defined. Try something like 'ally'
+      RELATION: Relación inválida, intentá algo como 'ally'
       ACCESS: Invalid access defined. Try something like 'allow'
       ACTION: Invalid action defined. Try something like 'build'
       SET: '&cCannot set a locked permission'
@@ -442,15 +442,15 @@ COMMAND:
     YOURS: '%1$s has %2$s your faction'
     OTHER: '%s&e has %s the faction ''%s&e''.'
   PROMOTE:
-    TARGET: You've been %1$s to %2$s
-    SUCCESS: You successfully %1$s %2$s to %3$s
-    PROMOTED: promoted
-    DEMOTED: demoted
-    DESCRIPTION: /f promote <name>
-    WRONGFACTION: '%1$s is not part of your faction.'
-    NOTTHATPLAYER: That player cannot be promoted.
+    TARGET: Fuiste %1$s a %2$s
+    SUCCESS: %1$s %2$s a %3$s
+    PROMOTED: promovido
+    DEMOTED: bajado de rango
+    DESCRIPTION: /f promote <user>
+    WRONGFACTION: '%1$s no es miembro de tu facción.'
+    NOTTHATPLAYER: Ese jugador no puede ser promovido.
     NOT:
-      ALLOWED: You can't promote or demote that player.
+      ALLOWED: No podés modificar el rango de ese jugador.
   PERMANENTPOWER:
     DESCRIPTION: Toggle faction power permanence
     GRANT: added permanentpower status to
@@ -479,22 +479,22 @@ COMMAND:
     BOOSTLOG: '%1$s has set the power bonus/penalty for %2$s to %3$d.'
     DESCRIPTION: Apply permanent power bonus/penalty to specified player or faction
   RELATIONS:
-    ALLTHENOPE: '&cNope! You can''t.'
-    MORENOPE: '&cNope! You can''t declare a relation to yourself :)'
-    ALREADYINRELATIONSHIP: '&cYou already have that relation wish set with %1$s.'
+    ALLTHENOPE: '&cNo, no podés.'
+    MORENOPE: '&cNononono.'
+    ALREADYINRELATIONSHIP: '&cYa tenés esa relación con %1$s.'
     TOMARRY: to change a relation wish
     FORMARRY: for changing a relation wish
-    MUTUAL: '&eYour faction is now %1$s&e to %2$s'
+    MUTUAL: '&eTu facción ahora es %1$s&e con %2$s'
     PEACEFUL: '&eThis will have no effect while your faction is peaceful.'
     PEACEFULOTHER: '&eThis will have no effect while their faction is peaceful.'
     DESCRIPTION: Set relation wish to another faction
     EXCEEDS:
-      ME: '&eFailed to set relation wish. You can only have %1$s %2$s.'
-      THEY: '&eFailed to set relation wish. They can only have %1$s %2$s.'
+      ME: '&eSolo podes tener %1$s %2$s.'
+      THEY: '&eSolo pueden tener %1$s %2$s.'
     PROPOSAL:
-      '1': '%1$s&e wishes to be your %2$s'
-      '2': '&eType &b/%1$s %2$s %3$s&e to accept.'
-      SENT: '%1$s&e were informed that you wish to be %2$s'
+      '1': '%1$s&e desea ser tu %2$s'
+      '2': '&eEscribe &b/%1$s %2$s %3$s&e para aceptar.'
+      SENT: '%1$s&e fueron informados que deseas ser su %2$s'
   RELOAD:
     TIME: '&eReloaded &dall configuration files &efrom disk, took &d%1$d ms&e.'
     DESCRIPTION: Reload data file(s) from disk
@@ -508,25 +508,25 @@ COMMAND:
   SCOREBOARD:
     DESCRIPTION: Scoreboardy things
   SETDEFAULTROLE:
-    DESCRIPTION: /f defaultrole <role> - set your Faction's default role.
-    NOTTHATROLE: You cannot set the default to admin.
-    SUCCESS: Set default role of your faction to %1$s
-    INVALIDROLE: Couldn't find matching role for %1$s
+    DESCRIPTION: /f defaultrole <rol> - elige el rol por defecto.
+    NOTTHATROLE: El rol por defecto no puede ser admin.
+    SUCCESS: El rol por defecto ahora es %1$s
+    INVALIDROLE: No se encontró el rol %1$s
   SETFWARP:
-    NOTCLAIMED: '&eYou can only set warps in your faction territory.'
-    LIMIT: '&eYour Faction already has the max amount of warps set &6(%1$d).'
-    SET: '&eSet warp &6%1$s&e and password &b''%2$s'' &eto your location.'
+    NOTCLAIMED: '&eSolo podes hacer warps en territorio de tu facción.'
+    LIMIT: '&eWarps máximos alcanzado: &6(%1$d).'
+    SET: '&eWarp &6%1$s&e y contraseña &b''%2$s'' &ea tu ubicación.'
     TOSET: to set warp
     FORSET: for setting warp
-    DESCRIPTION: Set a faction warp
+    DESCRIPTION: Añade un warp
   SETHOME:
     DISABLED: '&cSorry, Faction homes are disabled on this server.'
-    NOTCLAIMED: '&cSorry, your faction home can only be set inside your own claimed
-      territory.'
+    NOTCLAIMED: '&cLa f home tiene que estar dentro de territorio
+      adquirido.'
     TOSET: to set the faction home
     FORSET: for setting the faction home
-    SET: '%1$s&e set the home for your faction. You can now use:'
-    SETOTHER: '&cYou have set the home for the %1$s&e faction.'
+    SET: '%1$s&e creó el home de tu facción. Ahora puedes usar:'
+    SETOTHER: '&cEligiste el f home de la facción %1$s&e .'
     DESCRIPTION: Set the faction home
   SETMAXVAULTS:
     DESCRIPTION: Set max vaults for a Faction.
@@ -571,11 +571,11 @@ COMMAND:
     TOGGLE: '&eSeechunk &d%1$s'
   SHOW:
     NOFACTION:
-      SELF: You are not in a faction
-      OTHER: That's not a faction
+      SELF: No pertenecés a una facción
+      OTHER: Esa facción no existe
     TOSHOW: to show faction information
     FORSHOW: for showing faction information
-    DESCRIPTION: '&6Description: &e%1$s'
+    DESCRIPTION: '&6Descripción: &e%1$s'
     PEACEFUL: This faction is Peaceful
     PERMANENT: '&6This faction is permanent, remaining even with no members.'
     JOINING: '&6Joining: &e%1$s '
@@ -598,52 +598,52 @@ COMMAND:
         RAIDABLE: '&eDTR: %1$d'
     EXEMPT: '&cThis faction is exempt and cannot be seen.'
   SHOWINVITES:
-    PENDING: 'Players with pending invites: '
-    CLICKTOREVOKE: Click to revoke invite for %1$s
-    DESCRIPTION: Show pending faction invites
+    PENDING: 'Jugadores con invitacion pendiente: '
+    CLICKTOREVOKE: Click para revocar invitación de %1$s
+    DESCRIPTION: Muestra invitaciones pendientes
   STATUS:
-    FORMAT: '%1$s Power: %2$s Last Seen: %3$s'
+    FORMAT: '%1$s Power: %2$s Última conexión: %3$s'
     ONLINE: Online
-    AGOSUFFIX: ' ago.'
+    AGOSUFFIX: ' .'
     DESCRIPTION: Show the status of a player
   STUCK:
-    TIMEFORMAT: m 'minutes', s 'seconds.'
-    CANCELLED: '&6Teleport cancelled because you were damaged'
-    OUTSIDE: '&6Teleport cancelled because you left &e%1$d &6block radius'
-    EXISTS: '&6You are already teleporting, you must wait &e%1$s'
-    START: '&6Teleport will commence in &e%s&6. Don''t take or deal damage. '
-    TELEPORT: '&6Teleported safely to %1$d, %2$d, %3$d.'
+    TIMEFORMAT: m 'minutos', s 'segundos.'
+    CANCELLED: '&6Teleport cancelado, recibiste daño'
+    OUTSIDE: '&6Teleport cancelado, te fuiste muy lejos'
+    EXISTS: '&6Tenes que esperar &e%1$s'
+    START: '&6Teleport comenzará en &e%s&6. No des o recibas daño. '
+    TELEPORT: '&6Fuiste teletransportado a %1$d, %2$d, %3$d.'
     TOSTUCK: to safely teleport %1$s out
     FORSTUCK: for %1$s initiating a safe teleport out
     DESCRIPTION: Safely teleports you out of enemy faction
   TAG:
-    TAKEN: '&cThat tag is already taken'
+    TAKEN: '&cEse tag ya está en uso'
     TOCHANGE: to change the faction tag
     FORCHANGE: for changing the faction tag
-    FACTION: '%1$s&e changed your faction tag to %2$s'
-    CHANGED: '&eThe faction %1$s&e changed their name to %2$s.'
-    DESCRIPTION: Change the faction tag
+    FACTION: '%1$s&e cambió el tag de facción a %2$s'
+    CHANGED: '&eLa facción %1$s&e cambió su nombre a %2$s.'
+    DESCRIPTION: Cambia el tag de la facción
   TITLE:
     TOCHANGE: to change a players title
     FORCHANGE: for changing a players title
-    CHANGED: '%1$s&e changed a title: %2$s'
-    DESCRIPTION: Set or remove a players title
+    CHANGED: '%1$s&e cambió un título: %2$s'
+    DESCRIPTION: Elige o quita un título al jugador
   TOGGLEALLIANCECHAT:
-    DESCRIPTION: Toggles whether or not you will see alliance chat
-    IGNORE: Alliance chat is now ignored
-    UNIGNORE: Alliance chat is no longer ignored
+    DESCRIPTION: Activar o desactivar el chat de alianzas
+    IGNORE: Chat de alianza ignorado
+    UNIGNORE: Chat de alianza activado
   TOGGLESB:
     DISABLED: You can't toggle scoreboards while they are disabled.
   TOP:
-    DESCRIPTION: Sort Factions to see the top of some criteria.
-    TOP: Top Factions by %s. Page %d/%d
+    DESCRIPTION: Muestra el top de facciones.
+    TOP: Top de Factions por %s. Pag %d/%d
     LINE: '%d. &6%s: &c%s'
-    INVALID: Could not sort by %s. Try balance, online, members, power or land.
+    INVALID: No existe %s. Intenta balance, online, members, power o land.
   UNBAN:
-    DESCRIPTION: Unban someone from your Faction
-    NOTBANNED: '&7%s &cisn''t banned. Not doing anything.'
-    UNBANNED: '&e%1$s &cunbanned &7%2$s'
-    TARGET: '&aYou were unbanned from &r%s'
+    DESCRIPTION: Desbanea a alguien de tu facción
+    NOTBANNED: '&7%s &cno está baneado.'
+    UNBANNED: '&e%1$s &cdesbaneó a &7%2$s'
+    TARGET: '&aFuiste desbaneado de &r%s'
   UNCLAIM:
     SAFEZONE:
       SUCCESS: '&eSafe zone was unclaimed.'
