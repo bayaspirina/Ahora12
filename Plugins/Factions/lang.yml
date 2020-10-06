@@ -655,16 +655,16 @@ COMMAND:
     UNCLAIMS: '&eYou unclaimed this land.'
     WRONGFACTIONOTHER: '&cAttempted to unclaim land for incorrect faction'
     LOG: '%1$s unclaimed land at (%2$s) from the faction: %3$s'
-    WRONGFACTION: '&cYou don''t own this land.'
+    WRONGFACTION: '&cNo te pertenece este territorio.'
     TOUNCLAIM: to unclaim this land
     FORUNCLAIM: for unclaiming this land
-    FACTIONUNCLAIMED: '%1$s&e unclaimed some land.'
+    FACTIONUNCLAIMED: '%1$s&e borró tierras.'
     DESCRIPTION: Unclaim the land where you are standing
   UNCLAIMALL:
     TOUNCLAIM: to unclaim all faction land
     FORUNCLAIM: for unclaiming all faction land
-    UNCLAIMED: '%1$s&e unclaimed ALL of your faction''s land.'
-    LOG: '%1$s unclaimed everything for the faction: %2$s'
+    UNCLAIMED: '%1$s&e borró TODAS las tierras de la facción.'
+    LOG: '%1$s borró todas las tierras de %2$s'
     DESCRIPTION: Unclaim all of your factions land
   VERSION:
     VERSION: '&eYou are running %1$s'
@@ -677,24 +677,24 @@ command:
   help:
     invitations: '&eYou might want to close it and use invitations:'
 LEAVE:
-  PASSADMIN: '&cYou must give the admin role to someone else first.'
-  NEGATIVEPOWER: '&cYou cannot leave until your power is positive.'
+  PASSADMIN: '&cTenés que darle el rol de admin a alguien primero.'
+  NEGATIVEPOWER: '&cNo podes abandonar hasta que tu poder sea positivo.'
   TOLEAVE: to leave your faction.
   FORLEAVE: for leaving your faction.
-  LEFT: '%s&e left faction %s&e.'
-  DISBANDED: '&e%s&e was disbanded.'
-  DISBANDEDLOG: The faction %s (%s) was disbanded due to the last player (%s) leaving.
+  LEFT: '%s&e abandonó la facción %s&e.'
+  DISBANDED: '&e%s&e fue eliminado.'
+  DISBANDEDLOG: La facción %s (%s) fue eliminada ya que su último miembro (%s) abandonó.
   DESCRIPTION: Leave your faction
 CLAIM:
-  PROTECTED: '&cThis land is protected'
+  PROTECTED: '&cEsta tierra está protegida'
   DISABLED: '&cSorry, this world has land claiming disabled.'
-  CANTCLAIM: '&cYou can''t claim land for &d%s&c.'
-  ALREADYOWN: '%s&e already own this land.'
-  MUSTBE: '&cYou must be &d%s&c to claim land.'
+  CANTCLAIM: '&cNo podés adquirir territorio para &d%s&c.'
+  ALREADYOWN: '%s&e ya le pertenece esta tierra.'
+  MUSTBE: '&cTenes que ser &d%s&c para adquirir tierra.'
   MEMBERS: Factions must have at least &d%s&c members to claim land.
   SAFEZONE: '&cYou can not claim a safe zone.'
   WARZONE: '&cYou can not claim a war zone.'
-  POWER: '&cYou can''t claim more land! You need more power!'
+  POWER: '&cNo podés adquirir más tierras! Necesitás más poder!'
   DTR:
     LAND: '&cYou can''t claim more land!'
   LIMIT: '&cLimit reached. You can''t claim more land!'
@@ -806,38 +806,38 @@ ECON:
     FAILURE: '&d%s&e can''t afford &d%s&e %s.'
 RELATION:
   MEMBER:
-    SINGULAR: member
-    PLURAL: members
+    SINGULAR: miembro
+    PLURAL: miembros
   ALLY:
-    SINGULAR: ally
-    PLURAL: allies
+    SINGULAR: aliado
+    PLURAL: aliados
   TRUCE:
-    SINGULAR: truce
-    PLURAL: truces
+    SINGULAR: tregua
+    PLURAL: treguas
   NEUTRAL:
     SINGULAR: neutral
-    PLURAL: neutrals
+    PLURAL: neutrales
   ENEMY:
-    SINGULAR: enemy
-    PLURAL: enemies
+    SINGULAR: enemigo
+    PLURAL: enemigos
 ROLE:
   ADMIN: admin
   COLEADER: coleader
   MODERATOR: moderator
   NORMAL: normal member
-  RECRUIT: recruit
+  RECRUIT: recruta
 REGION:
   SAFEZONE: safezone
   WARZONE: warzone
   WILDERNESS: wilderness
   PEACEFUL: peaceful territory
 PLAYER:
-  CANTHURT: '&eYou may not harm other players in %s'
+  CANTHURT: '&eNo podés lastimar otros jugadores en %s'
   SAFEAUTO: '&eThis land is now a safe zone.'
   WARAUTO: '&eThis land is now a war zone.'
-  OUCH: '&cOuch, that is starting to hurt. You should give it a rest.'
+  OUCH: '&cPero pará, que duele.'
   USE:
-    WILDERNESS: '&cYou can''t use &d%s&c in the wilderness.'
+    WILDERNESS: '&cNo podés usar &d%s&c en wilderness.'
     SAFEZONE: '&cYou can''t use &d%s&c in a safe zone.'
     WARZONE: '&cYou can''t use &d%s&c in a war zone.'
     TERRITORY: '&cYou can''t &d%s&c in the territory of &d%s&c.'
@@ -865,68 +865,68 @@ PLAYER:
     NOW: '&eYour power is now &d%d / %d'
   PVP:
     LOGIN: '&eYou can''t hurt other players for %d seconds after logging in.'
-    REQUIREFACTION: '&eYou can''t hurt other players until you join a faction.'
-    FACTIONLESS: '&eYou can''t hurt players who are not currently in a faction.'
+    REQUIREFACTION: '&eNo podés lastimar otros jugadores hasta que pertenezcas a una facción.'
+    FACTIONLESS: '&eNo podés lastiamr jugadores que no tengan facción.'
     PEACEFUL: '&ePeaceful players cannot participate in combat.'
-    NEUTRAL: '&eYou can''t hurt neutral factions. Declare them as an enemy.'
-    CANTHURT: '&eYou can''t hurt %s&e.'
-    NEUTRALFAIL: '&eYou can''t hurt %s&e in their own territory unless you declare
-      them as an enemy.'
-    TRIED: '%s&e tried to hurt you.'
+    NEUTRAL: '&eNo podés lastimar facciones neutrales. Declaralos Enemy.'
+    CANTHURT: '&eNo podés lastimar a %s&e.'
+    NEUTRALFAIL: '&eNo podés lastimar a %s&e en su territorio, a no ser que
+      lo declares Enemy.'
+    TRIED: '%s&e trató de lastimarte.'
 PERM:
-  BUILD: Building blocks
-  DESTROY: Breaking blocks
-  PAINBUILD: If allow, can build but hurts to do so
-  ITEM: Using items
-  CONTAINER: Opening any block that can store items
-  BUTTON: Using buttons
-  DOOR: Opening doors
-  LEVER: Using levers
-  PLATE: Using pressure plates
-  FROSTWALK: Walking on water with the frostwalk enchantment
-  INVITE: Inviting others to join the faction
-  KICK: Kicking members from the faction
-  BAN: Banning players from the faction
-  PROMOTE: Promoting members of the faction
-  DISBAND: Disbanding the entire faction
-  ECONOMY: Spending faction money
-  TERRITORY: Claiming or unclaiming faction territory
-  HOME: Visiting the faction home
-  SETHOME: Setting the faction home
-  LISTCLAIMS: View listed faction claims
-  SETWARP: Setting and unsetting faction warps
-  TNTDEPOSIT: Deposit TNT into faction bank
-  TNTWITHDRAW: Withdraw TNT from faction bank
-  WARP: Using faction warps
-  FLY: Flying in faction territory
-  OWNER: Set ownership of land using /f owner in faction territory
+  BUILD: Colocar bloques
+  DESTROY: Romper bloques
+  PAINBUILD: Lastimar jugador al construir
+  ITEM: Usar items
+  CONTAINER: Abrir cualquier bloque contenedor
+  BUTTON: Usar botones
+  DOOR: Abrir puertas
+  LEVER: Usar palancas
+  PLATE: Usar placas de presión
+  FROSTWALK: Caminar en agua con botas de hielo
+  INVITE: Invitar a otros a unirse
+  KICK: Echar miembros
+  BAN: Banear miembros
+  PROMOTE: Promover de rango a miembros
+  DISBAND: Eliminar facción
+  ECONOMY: Gastar dinero de facción
+  TERRITORY: Adquirir o eliminar territorio
+  HOME: Ir al f home de la facción
+  SETHOME: Elegir f home de la facción
+  LISTCLAIMS: Ver coordenadas de territorios
+  SETWARP: Hacer y eliminar warps
+  TNTDEPOSIT: Depositar TNT
+  TNTWITHDRAW: Sacar TNT
+  WARP: Usar warps
+  FLY: Volar
+  OWNER: Usar /f owner
   SHORT:
-    BUILD: build
-    DESTROY: destroy
+    BUILD: construir
+    DESTROY: destruir
     PAINBUILD: painbuild
-    ITEM: use items
-    CONTAINER: open containers
-    BUTTON: use buttons
-    DOOR: open doors
-    LEVER: use levers
-    PLATE: use pressure plates
+    ITEM: usar items
+    CONTAINER: abrir contenedores
+    BUTTON: usar botones
+    DOOR: abrir puertas
+    LEVER: usar palancas
+    PLATE: usar placas de presión
     FROSTWALK: frostwalk
-    INVITE: invite
-    KICK: kick
-    BAN: ban
-    PROMOTE: promote
-    DISBAND: disband
-    ECONOMY: spend faction money
-    TERRITORY: manage faction territory
-    HOME: visit home
-    SETHOME: set home
-    LISTCLAIMS: list claims
-    SETWARP: set warps
-    TNTDEPOSIT: deposit TNT
-    TNTWITHDRAW: withdraw TNT
-    WARP: use warps
+    INVITE: invitar
+    KICK: echar
+    BAN: banear
+    PROMOTE: promover
+    DISBAND: eliminar facc
+    ECONOMY: gastar dinero de facc
+    TERRITORY: manejar territorio de facc
+    HOME: ir a home
+    SETHOME: elegir home
+    LISTCLAIMS: listar territorio
+    SETWARP: hacer warps
+    TNTDEPOSIT: depositar TNT
+    TNTWITHDRAW: sacar TNT
+    WARP: usar warps
     FLY: fly
-    OWNER: set ownership
+    OWNER: usar f owner
   DENIED:
     WILDERNESS: '&cYou can''t %s in the wilderness'
     SAFEZONE: '&c>You can''t %s in a safe zone'
@@ -942,23 +942,23 @@ GUI:
     PAGE: '%1$s warps (page %2$d)'
   PERMS:
     RELATION:
-      NAME: 'Choose a relation%s:'
+      NAME: 'Elige relación%s:'
       ONLINEOFFLINEBIT: ' (%s)'
     ACTION:
-      NAME: 'Permissions: %1$s%2$s'
+      NAME: 'Permisos: %1$s%2$s'
       ONLINEOFFLINEBIT: ' (%s)'
-      LOCKED: (Locked)
-      ALLOW: Allow
-      DENY: Deny
+      LOCKED: (Bloqueado)
+      ALLOW: Permitir
+      DENY: Denegar
     TOGGLE: Toggle online/offline
     ONLINE: online
     OFFLINE: offline
   BUTTON:
-    NEXT: NEXT
-    PREV: PREVIOUS
-    BACK: BACK
-NOPAGES: '&eSorry. No Pages available.'
-INVALIDPAGE: '&eInvalid page. Must be between 1 and %1$d'
+    NEXT: SIGUIENTE
+    PREV: ANTERIOR
+    BACK: ATRAS
+NOPAGES: '&eSorry. No hay pags disponibles.'
+INVALIDPAGE: '&eInvalido. Tiene que ser entre 1 y %1$d'
 title: '&bFactions &0|&r'
 wilderness: '&2Wilderness'
 wilderness-description: ''
@@ -967,7 +967,7 @@ warzone-description: Not the safest place to be.
 safezone: '&6Safezone'
 safezone-description: Free from pvp and monsters.
 toggle-sb: You now have scoreboards set to {value}
-faction-leave: '&6Leaving %1$s, &6Entering %2$s'
+faction-leave: '&6Saliendo de %1$s, &6Entrando a %2$s'
 faction-announcement-top: '&d--Unread Faction Announcements--'
 faction-announcement-bottom: '&d--Unread Faction Announcements--'
 default-prefix: '{relationcolor}[{faction}] &r'
