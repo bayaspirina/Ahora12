@@ -1,5 +1,5 @@
 # If set to true, will check for updates
-Check-For-Updates: true
+Check-For-Updates: false
 # List of the enabled categories.
 Categories-Enabled:
   Gadgets: true
@@ -239,7 +239,7 @@ Pets-Are-Babies: true
 # Do you want the mounts
 # that normally make block trails
 # to do so?
-Mounts-Block-Trails: true
+Mounts-Block-Trails: false
 # This option allows to use ammo
 # for gadgets, for limited uses.
 # Ammo can be given with /uc give ammo
