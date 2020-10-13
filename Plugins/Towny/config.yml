@@ -342,7 +342,7 @@ new_world_settings:
       # wilderness by monsters exploding.
       enabled: 'false'
       entities: Creeper,EnderCrystal,EnderDragon,Fireball,SmallFireball,LargeFireball,TNTPrimed,ExplosiveMinecart
-      delay: 20s
+      delay: 60s
  
  
   ############################################################
@@ -373,7 +373,7 @@ global_town_settings:
   # limit will not be able to use their /town outpost teleports for the outpost #'s higher than their limit,
   # until they have dropped below their limit.
   # eg: If their limit is 3 then they cannot use /t outpost 4
-  over_outpost_limits_stops_teleports: 'false'
+  over_outpost_limits_stops_teleports: 'true'
   # Allow the use of /town spawn
   # Valid values are: true, false, war, peace
   # When war or peace is set, it is only possible to teleport to the town,
@@ -383,12 +383,12 @@ global_town_settings:
   # Valid values are: true, false, war, peace
   # When war or peace is set, it is only possible to teleport to the town,
   # when there is a war or peace.
-  allow_town_spawn_travel: 'false'
+  allow_town_spawn_travel: 'peace'
   # Allow regular residents to use /town spawn [town] to other towns in your nation.
   # Valid values are: true, false, war, peace
   # When war or peace is set, it is only possible to teleport to the town,
   # when there is a war or peace.
-  allow_town_spawn_travel_nation: 'true'
+  allow_town_spawn_travel_nation: 'peace'
   # Allow regular residents to use /town spawn [town] to other towns in a nation allied with your nation.
   # Valid values are: true, false, war, peace
   # When war or peace is set, it is only possible to teleport to the town,
@@ -397,11 +397,11 @@ global_town_settings:
   # When set to true both nation and ally spawn travel will also require the target town to have their status set to public.
   is_nation_ally_spawning_requiring_public_status: 'false'
   # If non zero it delays any spawn request by x seconds.
-  teleport_warmup_time: '0'
+  teleport_warmup_time: '5'
   # When set to true, if players are currently in a spawn warmup, moving will cancel their spawn.
-  movement_cancels_spawn_warmup: 'false'
+  movement_cancels_spawn_warmup: 'true'
   # When set to true, if players are damaged in any way while in a spawn warmup, their spawning will be cancelled.
-  damage_cancels_spawn_warmup: 'false'
+  damage_cancels_spawn_warmup: 'true'
   # Number of seconds that must pass before a player can use /t spawn or /res spawn.
   spawn_cooldown_time: '30'
   # Decides whether confirmations should appear if you spawn to an area with an associated cost.
@@ -464,7 +464,7 @@ global_town_settings:
   # Setting this higher can be dangerous if you use Towny in a mysql database. Large numbers can become shortened to scientific notation. 
   maximum_plot_price_cost: '1000000.0'
   # If set to true, the /town screen will display the xyz coordinate for a town's spawn rather than the homeblock's Towny coords.
-  display_xyz_instead_of_towny_coords: 'false'
+  display_xyz_instead_of_towny_coords: 'true'
   # If set to true the /town list command will list randomly, rather than by whichever comparator is used, hiding resident counts.
   display_town_list_randomly: 'false'
  
