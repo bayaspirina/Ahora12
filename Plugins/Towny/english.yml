@@ -444,7 +444,7 @@ msg_enemy_war_area_defended_attacker: '&6[Guerra]&c Has sido forzado a pagar %s 
 msg_enemy_war_area_defended_defender: '&6[Guerra]&c %s te pagó %s por el ataque fallido.'
 msg_enemy_war_area_defended_greater_forces: '&6[Guerra]&c Tu ataque fallido costó %s.'
 
-msg_warning_delete: '&4*** ATENCION, %s VA A SER BORRADO EL PROXIMO DIA POR LA FALTA DE FONDOS ***'
+msg_warning_delete: '&4*** ATENCION, %s VA A SER BORRADO EL PROXIMO DIA POR FALTA DE FONDOS ***'
 
 # Estos mensajes sólo se utilizan si la creación de una ciudad / país lo establece sólo la administración
 
@@ -784,16 +784,16 @@ msg_seconds: ' segundos'
 msg_err_invalid_string_nationboard_not_set: 'Texto inválido, Tablón de la nación no establecido.'
 
 msg_plot_evict: 'Plot desahuciada con éxito.'
-msg_no_one_to_evict: 'No one to evict from this plot.'
+msg_no_one_to_evict: 'Nadie a quien remover de este plot.'
 
 # Added in 0.46
-nation_help_10: 'Teleport to the nations spawn.'
-msg_nation_spawn_warmup: '&bWaiting to teleport...'
-msg_set_nation_spawn: '&bSuccessfully changed nation''s spawn.'
-msg_err_cant_afford_tp_nation: '&cCannot afford to teleport to %s.'
-msg_err_nationspawn_has_not_been_set: '&cNation spawn has not been set.'
-msg_err_spawn_not_within_nationtowns: '&cThe nation spawn has to be in a town that is part of the nation.'
-msg_err_spawn_not_within_capital: '&cThe nation spawn has to be in the capital town.'
+nation_help_10: 'Teleportate al spawn de la nación.'
+msg_nation_spawn_warmup: '&bEspera...'
+msg_set_nation_spawn: '&bCambiaste el spawn de la nación.'
+msg_err_cant_afford_tp_nation: '&cNo tenés dinero suficiente para ir a %s.'
+msg_err_nationspawn_has_not_been_set: '&cSpawn de nación no ha sido establecido.'
+msg_err_spawn_not_within_nationtowns: '&cEl spawn de nación tiene que ser dentro de una ciudad que sea parte de la nación.'
+msg_err_spawn_not_within_capital: '&cEl spawn de la nación tiene que estar en la ciudad capital.'
 msg_err_nation_spawn_war: '&cNation spawns are not amiable during war time.'
 msg_err_nation_not_public: '&cThat nation is not public.'
 msg_nation_toggle_public: '&aSuccessfully toggled the nation setting public.'
