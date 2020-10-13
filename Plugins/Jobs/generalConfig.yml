@@ -7,7 +7,7 @@
 # Default language.
 # Example: en, ru
 # File in locale folder with same name should exist. Example: messages_ru.yml
-locale-language: en
+locale-language: es
 storage:
   # storage method, can be MySQL or sqlite
   method: sqlite
@@ -374,7 +374,7 @@ ExploitProtections:
   # MythicMobs plugin support
   # Disable if you having issues with it or using old version
   MythicMobs:
-    enabled: true
+    enabled: false
   Spawner:
     # Prevent slime splitting when they are from spawner
     # Protects agains exploiting as new splited slimes is treated as naturally spawned and not from spawner
