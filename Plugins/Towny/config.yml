@@ -411,7 +411,7 @@ global_town_settings:
   # plots having their PVP toggled using /plot toggle pvp.
   pvp_cooldown_time: '30'
   # Respawn the player at his town spawn point when he/she dies
-  town_respawn: 'false'
+  town_respawn: 'true'
   # Town respawn only happens when the player dies in the same world as the town's spawn point.
   town_respawn_same_world_only: 'false'
   # Prevent players from using /town spawn while within unclaimed areas and/or enemy/neutral towns.
@@ -697,7 +697,7 @@ protection:
   # The maximum amount of time a mob could be inside a town's boundaries before being sent to the void.
   # Lower values will check all entities more often at the risk of heavier burden and resource use.
   # NEVER set below 1.
-  mob_removal_speed: 5s
+  mob_removal_speed: 900s
  
   # permitted entities https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/package-summary.html
   # Animals, Chicken, Cow, Creature, Creeper, Flying, Ghast, Giant, Monster, Pig, 
@@ -725,11 +725,11 @@ protection:
   # To make changes for each world edit the settings in the relevant worlds data file 'plugins/Towny/data/worlds/'
  
 unclaimed:
-  unclaimed_zone_build: 'false'
-  unclaimed_zone_destroy: 'false'
-  unclaimed_zone_item_use: 'false'
+  unclaimed_zone_build: 'true'
+  unclaimed_zone_destroy: 'true'
+  unclaimed_zone_item_use: 'true'
   unclaimed_zone_ignore: SAPLING,GOLD_ORE,IRON_ORE,COAL_ORE,LOG,LEAVES,LAPIS_ORE,LONG_GRASS,YELLOW_FLOWER,RED_ROSE,BROWN_MUSHROOM,RED_MUSHROOM,TORCH,DIAMOND_ORE,LADDER,RAILS,REDSTONE_ORE,GLOWING_REDSTONE_ORE,CACTUS,CLAY,SUGAR_CANE_BLOCK,PUMPKIN,GLOWSTONE,LOG_2,VINE,NETHER_WARTS,COCOA
-  unclaimed_zone_switch: 'false'
+  unclaimed_zone_switch: 'true'
  
  
   ############################################################
@@ -928,7 +928,7 @@ resident_settings:
   # if enabled old residents will be deleted, losing their town, townblocks, friends
   # after Two months (default) of not logging in
   delete_old_residents:
-    enable: 'false'
+    enable: 'true'
     deleted_after_time: 60d
     delete_economy_account: 'true'
     # When true only residents who have no town will be deleted.
@@ -1140,7 +1140,7 @@ jail:
 bank:
   # If true players will only be able to use /t deposit, /t withdraw, /n deposit & /n withdraw while inside bank plots belonging to the town or nation capital respectively.
   # Home plots will also allow deposit and withdraw commands.
-  is_banking_limited_to_bank_plots: 'false'
+  is_banking_limited_to_bank_plots: 'true'
  
  
   ############################################################
@@ -1204,7 +1204,7 @@ war:
       only_attack_borders: 'true'
     plots:
       # If true, nation members and allies can regen health on plots during war.
-      healable: 'true'
+      healable: 'false'
       # If true, fireworks will be launched at plots being attacked or healed in war every war tick.
       firework_on_attacked: 'true'
  
