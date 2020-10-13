@@ -294,7 +294,7 @@ new_world_settings:
  
   fire:
     # Allow fire to be lit and spread in this world.
-    world_firespread_enabled: 'true'
+    world_firespread_enabled: 'false'
     # force_fire_on is a global flag and overrides any towns flag setting
     force_fire_on: 'false'
  
@@ -332,7 +332,7 @@ new_world_settings:
       #
       # If you allow players to break/build in the wild the snapshot will
       # include any changes made before the plot was claimed.
-      enabled: 'true'
+      enabled: 'false'
       speed: 1s
       # These block types will NOT be regenerated
       block_ignore: GOLD_ORE,LAPIS_ORE,LAPIS_BLOCK,GOLD_BLOCK,IRON_BLOCK,MOSSY_COBBLESTONE,TORCH,MOB_SPAWNER,DIAMOND_ORE,DIAMOND_BLOCK,SIGN_POST,WALL_SIGN,GLOWSTONE
@@ -340,7 +340,7 @@ new_world_settings:
     wild_revert_on_mob_explosion:
       # Enabling this will slowly regenerate holes created in the
       # wilderness by monsters exploding.
-      enabled: 'true'
+      enabled: 'false'
       entities: Creeper,EnderCrystal,EnderDragon,Fireball,SmallFireball,LargeFireball,TNTPrimed,ExplosiveMinecart
       delay: 20s
  
@@ -353,10 +353,10 @@ new_world_settings:
  
 global_town_settings:
   # can residents/Allies harm other residents when in an area with pvp enabled? Other than an Arena plot.
-  friendly_fire: 'true'
+  friendly_fire: 'false'
   # Players within their town or allied towns will regenerate half a heart after every health_regen_speed seconds.
   health_regen:
-    speed: 3s
+    speed: 5s
     enable: 'true'
   # Allow towns to claim outposts (a townblock not connected to town).
   allow_outposts: 'true'
@@ -368,7 +368,7 @@ global_town_settings:
   # to lose outposts. They will not be able to start new outposts until they have unclaimed outposts
   # to become under their limit. Likewise, towns that join a nation and receive bonus outposts will
   # be over their limit if they leave the nation.
-  limit_outposts_using_town_and_nation_levels: 'false'
+  limit_outposts_using_town_and_nation_levels: 'true'
   # When limit_outposts_using_town_and_nation_levels is also true, towns which are over their outpost
   # limit will not be able to use their /town outpost teleports for the outpost #'s higher than their limit,
   # until they have dropped below their limit.
@@ -378,12 +378,12 @@ global_town_settings:
   # Valid values are: true, false, war, peace
   # When war or peace is set, it is only possible to teleport to the town,
   # when there is a war or peace.
-  allow_town_spawn: 'true'
+  allow_town_spawn: 'peace'
   # Allow regular residents to use /town spawn [town] (TP to other towns if they are public).
   # Valid values are: true, false, war, peace
   # When war or peace is set, it is only possible to teleport to the town,
   # when there is a war or peace.
-  allow_town_spawn_travel: 'true'
+  allow_town_spawn_travel: 'false'
   # Allow regular residents to use /town spawn [town] to other towns in your nation.
   # Valid values are: true, false, war, peace
   # When war or peace is set, it is only possible to teleport to the town,
@@ -393,7 +393,7 @@ global_town_settings:
   # Valid values are: true, false, war, peace
   # When war or peace is set, it is only possible to teleport to the town,
   # when there is a war or peace.
-  allow_town_spawn_travel_ally: 'true'
+  allow_town_spawn_travel_ally: 'peace'
   # When set to true both nation and ally spawn travel will also require the target town to have their status set to public.
   is_nation_ally_spawning_requiring_public_status: 'false'
   # If non zero it delays any spawn request by x seconds.
