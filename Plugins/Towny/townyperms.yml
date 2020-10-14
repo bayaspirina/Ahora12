@@ -104,6 +104,7 @@ nations:
         # Kings get these permissions in addition to the default set.
         - towny.command.nation.*
         - towny.command.nation.deposit.other
+        - towny.town.claim.outpost
         
     ranks:
         assistant:
