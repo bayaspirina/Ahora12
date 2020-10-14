@@ -127,7 +127,7 @@ hide-jobs-without-permission: false
 hide-jobsinfo-without-permission: false
 # Option to allow payment to be made when killing mobs from a spawner.
 # Use jobs.nearspawner.[amount] to define multiplayer. Example jobs.nearspawner.-0.5 will pay half of payment, jobs.nearspawner.-1 will not pay at all
-enable-pay-near-spawner: false
+enable-pay-near-spawner: true
 # Option to allow payment to be made in creative mode. This ignoring when a group has 'jobs.paycreative' permission.
 enable-pay-creative: false
 # Option to allow payment to be made for exploring when player flies
